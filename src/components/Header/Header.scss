@@ -1,0 +1,52 @@
+@import "../../common/colors.scss";
+
+.header {
+  background-color: $secondary-color;
+  height: 72px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  &__logo {
+    color: $font-primary;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  &__search-bar {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+
+    form {
+      display: flex;
+      justify-content: center;
+      width: 70%;
+
+      button {
+        padding: 0px 8px;
+        font-size: 20px;
+        cursor: pointer;
+        height: 38px;
+      }
+    }
+  }
+
+  &__user-image img {
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+  }
+
+  &__file {
+    opacity: 0;
+    border: none;
+    border-radius: 3px;
+    background: grey;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    top: 0px;
+    height: 100%;
+  }
+}
